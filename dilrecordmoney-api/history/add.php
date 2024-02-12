@@ -5,7 +5,7 @@ $id_user    = $_POST['id_user'];
 $type       = $_POST['type'];
 $date       = $_POST['date'];
 $total      = $_POST['total'];
-$details    = $_POST['details'];
+$detail    = $_POST['detail'];
 $created_at = $_POST['created_at'];
 $updated_at = $_POST['updated_at'];
 
@@ -28,7 +28,7 @@ if ($result_check->num_rows > 0) {
             type = '$type',
             date = '$date',
             total = '$total',
-            details = '$details',
+            detail = '$detail',
             created_at = '$created_at',
             updated_at = '$updated_at'
             ";

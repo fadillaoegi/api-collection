@@ -6,7 +6,7 @@ $id_user    = $_POST['id_user'];
 $type       = $_POST['type'];
 $date       = $_POST['date'];
 $total      = $_POST['total'];
-$details    = $_POST['details'];
+$detail    = $_POST['details'];
 $updated_at = $_POST['updated_at'];
 
 $sql_check = "SELECT * FROM history
@@ -28,7 +28,7 @@ if ($result_check->num_rows > 1) { // ada data lain dengan date yang sama
             type = '$type',
             date = '$date',
             total = '$total',
-            details = '$details',
+            detail = '$detail',
             updated_at = '$updated_at'
             WHERE
             id_history = '$id_history'

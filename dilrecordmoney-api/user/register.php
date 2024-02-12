@@ -4,10 +4,10 @@ include "../connection.php";
 $name = $_POST["name"];
 $email = $_POST["email"];
 $password = md5($_POST["password"]);
-// $created_at = isset($_POST["created_at"]) ? $_POST["created_at"] : null;
-// $updated_at = isset($_POST["updated_at"]) ? $_POST["updated_at"] : null;
-$created_at = $_POST["created_at"];
-$updated_at = $_POST["updated_at"];
+$created_at = isset($_POST["created_at"]) ? $_POST["created_at"] : null;
+$updated_at = isset($_POST["updated_at"]) ? $_POST["updated_at"] : null;
+// $created_at = $_POST["created_at"];
+// $updated_at = $_POST["updated_at"];
 
 $sql_check = "SELECT * FROM users WHERE email = '$email' ";
 
