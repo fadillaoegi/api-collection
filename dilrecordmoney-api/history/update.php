@@ -6,7 +6,7 @@ $id_user    = $_POST['id_user'];
 $type       = $_POST['type'];
 $date       = $_POST['date'];
 $total      = $_POST['total'];
-$detail    = $_POST['details'];
+$detail    = $_POST['detail'];
 $updated_at = $_POST['updated_at'];
 
 $sql_check = "SELECT * FROM history
