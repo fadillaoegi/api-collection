@@ -4,7 +4,7 @@ include "../connection.php";
 $id_user = $_POST['id_user'];
 $date = $_POST['date'];
 
-$sql = "SELECT id_history, date, total, type FROM history
+$sql = "SELECT id, date, total, type FROM history
         WHERE
         id_user='$id_user' AND date='$date'
         ORDER BY date DESC

@@ -5,7 +5,7 @@ $id_user = $_POST['id_user'];
 $type = $_POST['type'];
 $date = $_POST['date'];
 
-$sql = "SELECT id_history, date, total, type FROM history
+$sql = "SELECT id, date, total, type FROM history
         WHERE
         id_user='$id_user' AND type='$type' AND date='$date'
         ORDER BY date DESC

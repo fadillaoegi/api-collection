@@ -1,11 +1,11 @@
 <?php
 include '../connection.php';
 
-$id_history = $_POST['id_history'];
+$id = $_POST['id'];
 
 $sql = "DELETE FROM history
         WHERE
-        id_history = '$id_history'
+        id = '$id'
         ";
 
 $result = $connect->query($sql);

@@ -1,7 +1,7 @@
 <?php
 include '../connection.php';
 
-$id_history = $_POST['id_history'];
+$id = $_POST['id'];
 $id_user    = $_POST['id_user'];
 $type       = $_POST['type'];
 $date       = $_POST['date'];
@@ -31,7 +31,7 @@ if ($result_check->num_rows > 1) { // ada data lain dengan date yang sama
             detail = '$detail',
             updated_at = '$updated_at'
             WHERE
-            id_history = '$id_history'
+            id = '$id'
             ";
 
     $result = $connect->query($sql);
